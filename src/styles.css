@@ -1,0 +1,63 @@
+h1 {
+  font-size: 20pt;
+  font-weight: 300;
+}
+.largest {
+  max-width: 600px;
+}
+.current {
+  position: relative;
+  bottom: 4px;
+}
+.date {
+  font-size: 10pt;
+  position: relative;
+  top: 12px;
+}
+.time {
+  font-size: 10pt;
+  position: relative;
+  top: 12px;
+}
+.main-weather-icon {
+  font-size: 36pt;
+  border: solid 2pt;
+  border-color: royalblue;
+  border-radius: 100px;
+  text-align: center;
+  position: relative;
+  left: 6pt;
+}
+.main-temp {
+  font-size: 30pt;
+  position: relative;
+  top: 5pt;
+  position: relative;
+  left: 4pt;
+}
+.weather-description {
+  font-size: 10pt;
+  position: relative;
+  left: 10pt;
+}
+.weather-details {
+  font-size: 10pt;
+}
+.right {
+  text-align: right;
+  position: relative;
+  right: 5pt;
+}
+.weather-icon {
+  font-size: 18pt;
+  border: solid 1pt;
+  border-color: royalblue;
+  border-radius: 100px;
+}
+.card-day {
+  font-size: 10pt;
+}
+.temp {
+  font-size: 10pt;
+  margin-bottom: 0;
+}
