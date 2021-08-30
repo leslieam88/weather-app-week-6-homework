@@ -13,6 +13,10 @@
     />
     <link rel="stylesheet" href="src/styles.css" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/06efa8a528.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="container largest border border-primary border-4 m-4 p-4">
@@ -42,6 +46,7 @@
               class="btn m-1 btn-primary current"
               id="current-button"
               type="button"
+              disabled
             >
               Current
             </button>
@@ -61,24 +66,38 @@
         </div>
       </div>
       <div class="row">
-        <div class="col">
+        <div class="col-5">
           <div class="row">
-            <div class="col p-0 main-weather-icon">🌙</div>
-            <div class="col main-temp mainTemp" id="mainTemp">84°F</div>
+            <div class="col p-0 main-weather-icon" id="mainWeatherIcon">
+              <img
+                src="http://openweathermap.org/img/wn/01n@2x.png"
+                alt="Clear"
+                id="icon"
+                class="float-left"
+                width="100"
+              />
+            </div>
+            <div class="col main-temp mainTemp" id="mainTemp">
+              <span id="number">84</span>
+              <span class="col unit">
+                <a href="#" id="fahrenheit">°F</a><strong> | </strong
+                ><a href="#" id="celsius">°C</a>
+              </span>
+            </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col-3">
           <p class="weather-description">
             <br />
             <span id="description"> Fair </span>
             <br />
             Feels like
-            <span id="feelsLike"> 89 </span>°F
+            <span id="feelsLike"> 89°F</span>
           </p>
         </div>
-        <div class="col">
+        <div class="col-3">
           <div class="row">
-            <div class="col-auto">
+            <div class="col-5">
               <p class="weather-details">
                 <br />
                 Humidity
@@ -86,12 +105,12 @@
                 Wind
               </p>
             </div>
-            <div class="col">
+            <div class="col-7">
               <p class="weather-details right">
                 <br />
                 <span id="humidity">62</span>%
                 <br />
-                <span id="wind">7</span> mph
+                <span id="wind">7 mph</span>
               </p>
             </div>
           </div>
@@ -136,7 +155,9 @@
       </div>
     </div>
     <div class="link-text">
-      <a href="https://github.com/leslieam88/weather-app-week-6-homework"
+      <a
+        href="https://github.com/leslieam88/weather-app-week-6-homework"
+        target="_blank"
         >Open-source code</a
       >
       by Leslie M
